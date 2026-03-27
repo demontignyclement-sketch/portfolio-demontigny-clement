@@ -8,6 +8,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
+    <style>
+      .project-card-uniform {
+        min-height: 420px;
+        max-height: 420px;
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+      }
+      .project-card-uniform .project-cover {
+        min-height: 200px;
+        max-height: 200px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .project-card-uniform .project-body {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+    </style>
   </head>
   <body>
     <header class="site-header">
@@ -98,26 +121,55 @@
             <p>Ces travaux reflètent mon univers créatif et ma façon de concevoir des visuels clairs, impactants et adaptés aux besoins de chaque projet de communication.</p>
           </div>
           <div class="grid grid-2">
-            <article class="project-card">
-              <div class="project-cover pdf-cover">
-                <embed src="./images/mojo_tunes.pdf#page=1&view=FitH&scrollbar=0&toolbar=0&navpanes=0" type="application/pdf" width="100%" height="100%">
-              </div>
-              <div class="project-body">
-                <h3>Mojo Tunes</h3>
-                <p>Création d'un logo et d'une identité visuelle pour Mojo Tunes</p>
-                <a class="text-link" href="./images/mojo_tunes.pdf" target="_blank" rel="noreferrer">Voir le dossier complet (PDF)</a>
-              </div>
-            </article>
-            <article class="project-card">
-              <div class="project-cover pdf-cover">
-                <embed src="./images/ferme_esperance.pdf#page=1&view=FitH&scrollbar=0&toolbar=0&navpanes=0" type="application/pdf" width="100%" height="100%">
-              </div>
-              <div class="project-body">
-                <h3>La ferme de l'Espérance</h3>
-                <p>Idée de nouvelle identité visuelle pour la ferme de l'Espérance. Avec une mind map, une moodboard et un manifeste</p>
-                <a class="text-link" href="./images/ferme_esperance.pdf" target="_blank" rel="noreferrer">Voir le dossier complet (PDF)</a>
-              </div>
-            </article>
+            <a href="mojo-tunes.html" class="project-link" style="text-decoration:none;color:inherit;" target="_blank">
+              <article class="project-card project-card-uniform">
+                <div class="project-cover pdf-cover">
+                  <embed src="./images/mojo_tunes.pdf#page=1&view=FitH&scrollbar=0&toolbar=0&navpanes=0" type="application/pdf" width="100%" height="100%">
+                </div>
+                <div class="project-body">
+                  <h3>Mojo Tunes</h3>
+                  <p>Création d'un logo et d'une identité visuelle pour Mojo Tunes</p>
+                  <span class="text-link">Voir le dossier complet (PDF)</span>
+                </div>
+              </article>
+            </a>
+            <a href="ferme-esperance.html" class="project-link" style="text-decoration:none;color:inherit;" target="_blank">
+              <article class="project-card project-card-uniform">
+                <div class="project-cover pdf-cover">
+                  <embed src="./images/ferme_esperance.pdf#page=1&view=FitH&scrollbar=0&toolbar=0&navpanes=0" type="application/pdf" width="100%" height="100%">
+                </div>
+                <div class="project-body">
+                  <h3>La ferme de l'Espérance</h3>
+                  <p>Idée de nouvelle identité visuelle pour la ferme de l'Espérance. Avec une mind map, une moodboard et un manifeste</p>
+                  <span class="text-link">Voir le dossier complet (PDF)</span>
+                </div>
+              </article>
+            </a>
+            <a href="sae104.html" class="project-link" style="text-decoration:none;color:inherit;" target="_blank">
+              <article class="project-card project-card-uniform">
+                <div class="project-cover video-cover" style="display: flex; align-items: center; justify-content: center; background: #f3f3f3; min-height: 200px;">
+                  <video src="./images/SAE104_2025_Groupe H_Faivre_Demontigny_Iacopucci_Jamet_Tachenet_InterviewSAE104.mp4" style="max-width:100%;max-height:180px;border-radius:8px;box-shadow:0 2px 8px #0001;" controls muted preload="metadata"></video>
+                </div>
+                <div class="project-body">
+                  <h3>SAE 104 : Interview</h3>
+                  <p>Projet vidéo réalisé en groupe dans le cadre de la SAE 104. Interview, tournage, montage et post-production.</p>
+                </div>
+              </article>
+            </a>
+            <a href="projet-podcast.html" class="project-link" style="text-decoration:none;color:inherit;" target="_blank">
+              <article class="project-card project-card-uniform">
+                <div class="project-cover audio-cover" style="display: flex; align-items: center; justify-content: center; background: #f3f3f3; min-height: 200px;">
+                  <audio controls style="width: 100%; max-width: 250px;">
+                    <source src="./images/TDGH_IACOPUCCI_DEMONTIGNY_FAIVRE_fichier son copie.mp3" type="audio/mpeg">
+                    Votre navigateur ne supporte pas la lecture audio.
+                  </audio>
+                </div>
+                <div class="project-body">
+                  <h3>Extrait audio : projet podcast</h3>
+                  <p>Extrait d'un projet de podcast réalisé en équipe, mettant en avant la gestion du son et le montage audio.</p>
+                </div>
+              </article>
+            </a>
             <article class="project-card">
               <div class="project-cover pdf-cover" style="display: flex; align-items: center; justify-content: center; background: #f3f3f3; min-height: 200px;">
                 <span style="font-size: 1.5rem; color: #888;">Projet en cours</span>
