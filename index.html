@@ -8,171 +8,101 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
-    <style>
-      .project-card-uniform {
-        min-height: 420px;
-        max-height: 420px;
-        display: flex;
-        flex-direction: column;
-        justify-content: stretch;
-      }
-      .project-card-uniform .project-cover {
-        min-height: 200px;
-        max-height: 200px;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .project-card-uniform .project-body {
-        flex: 1 1 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-      }
-    </style>
   </head>
   <body>
     <header class="site-header">
-      <div class="container header-inner">
-        <div class="brand">Clément Demontigny</div>
-        <nav class="nav">
-          <a href="#projets">Projets</a>
-          <a href="#apropos">À propos</a>
-          <a href="#competences">Compétences</a>
-          <a href="#parcours">Parcours</a>
-          <a href="#contact">Contact</a>
-        </nav>
-        <a class="button ghost" href="https://www.linkedin.com/in/clément-demontigny-a88569352/
-" target="_blank" rel="noreferrer">LinkedIn</a>
+      <div class="container">
+        <div class="header-inner">
+          <div class="brand">Clément Demontigny</div>
+          <nav class="nav">
+            <a href="#projets">Projets</a>
+            <a href="#apropos">À propos</a>
+            <a href="#competences">Compétences</a>
+            <a href="#parcours">Parcours</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <a class="button ghost" href="https://www.linkedin.com/in/clément-demontigny-a88569352/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
       </div>
     </header>
 
     <main>
-      <section class="hero">
-        <div class="container hero-grid">
-          <div class="hero-copy">
-           
-            <h1>Graphiste et communication</h1>
-            <p class="lead">
-              Étudiant en première année de BUT MMI à l’IUT de Troyes, je développe des créations graphiques pour des projets variés, en veillant à proposer des visuels à la fois esthétiques, cohérents et adaptés aux objectifs de communication.
-            </p>
-            <div class="hero-actions">
-              <a class="button primary" href="#projets">Voir mes projets</a>
-              <a class="button ghost" href="#contact">Me contacter</a>
-            </div>
-            <div class="hero-meta">
-              <div>
-                <strong>20 ans</strong>
-                <span>Passionné par la communication et la création graphique</span>
-              </div>
-              <div>
-                <strong>Troyes</strong>
-         
-              </div>
-            </div>
-          </div>
-          <div class="hero-card">
-            <div class="hero-photo">
-              <div class="photo-placeholder"></div>
-            </div>
-            <div class="hero-card-body">
-              <p class="card-title">Actuellement</p>
-              <p>En recherche d'alternance en communication graphique</p>
-              <p></p>
-              <div class="tag-row">
-                <span class="tag">Photoshop</span>
-                <span class="tag">Illustator</span>
-                <span class="tag">InDesign</span>
-              </div>
-            </div>
+      <section id="hero" class="hero">
+        <div class="container">
+          <h1 class="reveal">Graphiste & Communication</h1>
+          <p class="lead reveal">
+            Étudiant en première année de BUT MMI à l’IUT de Troyes, je développe des créations graphiques pour des projets variés, en veillant à proposer des visuels à la fois esthétiques, cohérents et adaptés aux objectifs de communication.
+          </p>
+          <div class="hero-actions reveal">
+            <a class="button primary" href="#projets">Voir mes projets</a>
+            <a class="button ghost" href="#contact">Me contacter</a>
           </div>
         </div>
       </section>
 
-      <section id="competences" class="section">
+      <section id="apropos" class="section">
         <div class="container">
-          <div class="section-head">
-            <h2>Compétences techniques</h2>
-            <p></p>
-          </div>
-          <div class="grid grid-3">
-            <div class="card">
-              <h3>Graphisme & communication visuelle</h3>
-<p>Identité visuelle · Affiches · Réseaux sociaux · Mise en page</p>
-</div>
-<div class="card">
-  <h3>Création de contenus</h3>
-  <p>Suite Adobe · Canva · Motion design · Supports print & digitaux</p>
-</div>
-
-            <div class="card">
-              <h3>Code & développement</h3>
-              <p>Visual Studio Code · Docker </p>
+          <div class="about-grid reveal">
+            <div class="about-text">
+              <h2 class="section-title" style="text-align:left;">À propos de moi</h2>
+              <p class="section-subtitle" style="text-align:left;margin-left:0;">
+                Graphiste en alternance, je crée des visuels pour donner vie à vos idées. Passionné par l'image et le design, j'aime transformer un concept en un projet concret, propre et efficace.
+              </p>
+              <p style="color: var(--muted);">Je suis actuellement en recherche d'alternance en graphisme ou en communication.</p>
             </div>
+            <img src="./images/8628.png" alt="Clément Demontigny" class="about-image">
           </div>
         </div>
       </section>
 
-      <section id="projets" class="section projects">
+      <section id="projets" class="section">
         <div class="container">
-          <div class="section-head">
-            <h2>Projets & travaux</h2>
-            <p>Ces travaux reflètent mon univers créatif et ma façon de concevoir des visuels clairs, impactants et adaptés aux besoins de chaque projet de communication.</p>
-          </div>
-          <div class="grid grid-2">
-            <a href="mojo-tunes.html" class="project-link" style="text-decoration:none;color:inherit;" target="_blank">
-              <article class="project-card project-card-uniform">
-                <div class="project-cover pdf-cover">
-                  <embed src="./images/mojo_tunes.pdf#page=1&view=FitH&scrollbar=0&toolbar=0&navpanes=0" type="application/pdf" width="100%" height="100%">
-                </div>
-                <div class="project-body">
-                  <h3>Mojo Tunes</h3>
-                  <p>Création d'un logo et d'une identité visuelle pour Mojo Tunes</p>
-                  <span class="text-link">Voir le dossier complet (PDF)</span>
-                </div>
-              </article>
+          <h2 class="section-title reveal">Projets & Travaux</h2>
+          <p class="section-subtitle reveal">Ces travaux reflètent mon univers créatif et ma façon de concevoir des visuels clairs, impactants et adaptés aux besoins de chaque projet de communication.</p>
+          <div class="projects-grid">
+            <a href="mojo-tunes.html" target="_blank" class="project-card reveal">
+              <div class="project-cover">
+                <embed src="./images/mojo_tunes.pdf#page=1&view=FitH&scrollbar=0&toolbar=0&navpanes=0" type="application/pdf">
+              </div>
+              <div class="project-body">
+                <h3>Mojo Tunes</h3>
+                <p>Création d'un logo et d'une identité visuelle pour Mojo Tunes.</p>
+                <span class="project-link">Voir le dossier complet (PDF)</span>
+              </div>
             </a>
-            <a href="ferme-esperance.html" class="project-link" style="text-decoration:none;color:inherit;" target="_blank">
-              <article class="project-card project-card-uniform">
-                <div class="project-cover pdf-cover">
-                  <embed src="./images/ferme_esperance.pdf#page=1&view=FitH&scrollbar=0&toolbar=0&navpanes=0" type="application/pdf" width="100%" height="100%">
-                </div>
-                <div class="project-body">
-                  <h3>La ferme de l'Espérance</h3>
-                  <p>Idée de nouvelle identité visuelle pour la ferme de l'Espérance. Avec une mind map, une moodboard et un manifeste</p>
-                  <span class="text-link">Voir le dossier complet (PDF)</span>
-                </div>
-              </article>
+            <a href="ferme-esperance.html" target="_blank" class="project-card reveal">
+              <div class="project-cover">
+                <embed src="./images/ferme_esperance.pdf#page=1&view=FitH&scrollbar=0&toolbar=0&navpanes=0" type="application/pdf">
+              </div>
+              <div class="project-body">
+                <h3>La ferme de l'Espérance</h3>
+                <p>Idée de nouvelle identité visuelle pour la ferme de l'Espérance. Avec une mind map, une moodboard et un manifeste.</p>
+                <span class="project-link">Voir le dossier complet (PDF)</span>
+              </div>
             </a>
-            <a href="sae104.html" class="project-link" style="text-decoration:none;color:inherit;" target="_blank">
-              <article class="project-card project-card-uniform">
-                <div class="project-cover video-cover" style="display: flex; align-items: center; justify-content: center; background: #f3f3f3; min-height: 200px;">
-                  <video src="./images/SAE104_2025_Groupe H_Faivre_Demontigny_Iacopucci_Jamet_Tachenet_InterviewSAE104.mp4" style="max-width:100%;max-height:180px;border-radius:8px;box-shadow:0 2px 8px #0001;" controls muted preload="metadata"></video>
-                </div>
-                <div class="project-body">
-                  <h3>SAE 104 : Interview</h3>
-                  <p>Projet vidéo réalisé en groupe dans le cadre de la SAE 104. Interview, tournage, montage et post-production.</p>
-                </div>
-              </article>
+            <a href="sae104.html" target="_blank" class="project-card reveal">
+              <div class="project-cover">
+                <video src="./images/SAE104_2025_Groupe H_Faivre_Demontigny_Iacopucci_Jamet_Tachenet_InterviewSAE104 (1) (1) (1) (1).mp4" muted playsinline preload="metadata"></video>
+              </div>
+              <div class="project-body">
+                <h3>SAE 104 : Interview</h3>
+                <p>Projet vidéo réalisé en groupe dans le cadre de la SAE 104. Interview, tournage, montage et post-production.</p>
+                <span class="project-link">Voir l'interview</span>
+              </div>
             </a>
-            <a href="projet-podcast.html" class="project-link" style="text-decoration:none;color:inherit;" target="_blank">
-              <article class="project-card project-card-uniform">
-                <div class="project-cover audio-cover" style="display: flex; align-items: center; justify-content: center; background: #f3f3f3; min-height: 200px;">
-                  <audio controls style="width: 100%; max-width: 250px;">
-                    <source src="./images/TDGH_IACOPUCCI_DEMONTIGNY_FAIVRE_fichier son copie.mp3" type="audio/mpeg">
-                    Votre navigateur ne supporte pas la lecture audio.
-                  </audio>
-                </div>
-                <div class="project-body">
-                  <h3>Extrait audio : projet podcast</h3>
-                  <p>Extrait d'un projet de podcast réalisé en équipe, mettant en avant la gestion du son et le montage audio.</p>
-                </div>
-              </article>
+            <a href="projet-podcast.html" target="_blank" class="project-card reveal">
+              <div class="project-cover" style="background:#000;">
+                <span style="font-size:3rem;">🎧</span>
+              </div>
+              <div class="project-body">
+                <h3>Extrait audio : projet podcast</h3>
+                <p>Extrait d'un projet de podcast réalisé en équipe, mettant en avant la gestion du son et le montage audio.</p>
+                <span class="project-link">Écouter le podcast</span>
+              </div>
             </a>
-            <article class="project-card">
-              <div class="project-cover pdf-cover" style="display: flex; align-items: center; justify-content: center; background: #f3f3f3; min-height: 200px;">
-                <span style="font-size: 1.5rem; color: #888;">Projet en cours</span>
+            <article class="project-card reveal">
+              <div class="project-cover">
+                <span style="font-size: 1.5rem; color: var(--muted);">En cours</span>
               </div>
               <div class="project-body">
                 <h3>Projet en cours : Podcast</h3>
@@ -180,124 +110,100 @@
               </div>
             </article>
           </div>
-          <div class="banner">
-            <div>
-              <strong>Passionné par le graphisme et la communication</strong>
-              <p>Je suis actuellement en recherche d'alternance en graphisme ou en communication .</p>
-            </div>
-            <a class="button ghost" href="#contact">Me contacter</a>
-          </div>
         </div>
       </section>
 
-      <section id="apropos" class="section about">
-        <div class="container about-grid">
-          <div>
-            <h2>À propos de moi</h2>
-            <p>
-              Graphiste en alternance, je crée des visuels pour donner vie à vos idées. Passionné par l'image et le design, j'aime transformer un concept en un projet concret, propre et efficace.
-            </p>
-            <p>
-              
-            </p>
-          </div>
-          <div class="card highlight">
-            <p class="card-title">Ce que j’aime</p>
-            <ul class="list">
-              <li>Interfaces simples, utiles, agréables et ergonomiques</li>
-              <li>Design centré pour l'utilisateur</li>
-              <li>Communication claire et efficace</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section id="parcours" class="section">
+      <section id="competences" class="section">
         <div class="container">
-          <div class="section-head">
-            <h2>Formation</h2>
-            <p>BUT MMI Métier du Multimédia et de l'Internet.</p>
-          </div>
-          <div class="timeline">
-            <div class="timeline-item">
-              <div class="timeline-year">2025— 2028</div>
-              <div>
-                <h3>IUT de Troyes</h3>
-                <p>Bachelor Universitaire de Technologies · </p>
-              </div>
+          <h2 class="section-title reveal">Compétences</h2>
+          <div class="skills-grid">
+            <div class="skill-card reveal">
+              <h3>Graphisme & Communication</h3>
+              <p>Identité visuelle, affiches, réseaux sociaux, mise en page.</p>
             </div>
-            <div class="timeline-item">
-              <div class="timeline-year">2024 — 2025</div>
-              <div>
-                <h3>Fac de Lettres de Nancy </h3>
-                <p>Licence Information et Communication · </p>
-              </div>
+            <div class="skill-card reveal">
+              <h3>Création de Contenus</h3>
+              <p>Suite Adobe, Canva, motion design, supports print & digitaux.</p>
             </div>
-            <div class="timeline-item">
-              <div class="timeline-year">2021 — 2024</div>
-              <div>
-                <h3>Lycée général et technologique Catherine et Raymond Janot</h3>
-                <p>Baccalauréat général ·</p>
-              </div>
+            <div class="skill-card reveal">
+              <h3>Code & Développement</h3>
+              <p>Visual Studio Code, Docker.</p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      
-
-      <section class="section softskills">
-        <div class="container">
-          <div class="section-head">
-            <h2>Soft skills</h2>
-            <p>Créativité, autonomie et curiosité.</p>
-          </div>
-          <div class="grid grid-3">
-            <div class="card">
+            <div class="skill-card reveal">
               <h3>Créativité</h3>
               <p>Créer des solutions innovantes et originales.</p>
             </div>
-            <div class="card">
+            <div class="skill-card reveal">
               <h3>Autonomie</h3>
               <p>Se former et livrer des solutions avec initiative.</p>
             </div>
-            <div class="card">
+            <div class="skill-card reveal">
               <h3>Curiosité</h3>
               <p>Explorer de nouvelles approches créatives et techniques.</p>
             </div>
           </div>
         </div>
       </section>
+
+      <section id="parcours" class="section">
+        <div class="container">
+          <h2 class="section-title reveal">Parcours</h2>
+          <p class="section-subtitle reveal">BUT MMI Métier du Multimédia et de l'Internet.</p>
+          <div class="timeline reveal">
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <span class="timeline-year">2025—2028</span>
+                <h3>IUT de Troyes</h3>
+                <p>MMI - Métier du Multimédia et de l'Internet</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <span class="timeline-year">2024—2025</span>
+                <h3>Fac de Lettres de Nancy</h3>
+                <p>Licence Information et Communication</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <span class="timeline-year">2021—2024</span>
+                <h3>Lycée général et technologique Catherine et Raymond Janot</h3>
+                <p>Baccalauréat général</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="cv" class="section cv-section">
+        <div class="container reveal">
+          <h2 class="section-title">Mon CV</h2>
+          <p class="section-subtitle">Vous pouvez consulter mon CV ci-dessous ou le télécharger.</p>
+          <embed src="./images/CV Demontigny Clément.pdf#view=FitH" type="application/pdf" />
+          <div style="text-align:center; margin-top: 2rem;">
+            <a class="button primary" href="./images/CV Demontigny Clément.pdf" download="CV_Clement_Demontigny.pdf" target="_blank" rel="noopener">Télécharger le CV</a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer id="contact" class="site-footer">
-          <section id="cv" class="section cv-section">
-            <div class="container">
-              <div class="section-head">
-                <h2>Mon CV</h2>
-                <p>Vous pouvez consulter mon CV ci-dessous ou le télécharger.</p>
-              </div>
-              <div style="text-align:center; margin-bottom: 1.5rem;">
-                <embed src="./images/CV Demontigny Clément.pdf#view=FitH" type="application/pdf" style="width:100%; max-width:500px; height:700px; border:1px solid #ddd; box-shadow:0 2px 8px #0001; margin-bottom:1rem; border-radius:12px;" />
-                <br />
-                <a class="button primary" href="./images/CV Demontigny Clément.pdf" download="CV_Clement_Demontigny.pdf" target="_blank" rel="noopener">Télécharger le CV</a>
-              </div>
-            </div>
-          </section>
-      <div class="container footer-grid">
-        <div>
+      <div class="container">
+        <div class="footer-content reveal">
           <h2>Discutons d’un projet</h2>
           <p>Je suis disponible pour des collaborations digitales et de communication.</p>
+          <div class="footer-actions">
+            <a class="button primary" href="mailto:demontigny.clement@gmail.com">Envoyer un mail</a>
+            <a class="button ghost" href="https://www.linkedin.com/in/clément-demontigny-a88569352/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
         </div>
-        <div class="footer-actions">
-          <a class="button primary" href="mailto:demontigny.clement@gmail.com">Envoyer un mail</a>
-          <a class="button ghost" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <div class="footer-bottom">
+          <span>© 2026 Clément Démontigny</span>
+          <span>Portfolio — Graphisme et communication</span>
         </div>
-      </div>
-      <div class="container footer-bottom">
-        <span>© 2026 Clément Démontigny</span>
-        <span>Portfolio — Graphisme et communication</span>
       </div>
     </footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>
