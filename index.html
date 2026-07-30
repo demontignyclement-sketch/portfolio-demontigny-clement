@@ -6,7 +6,7 @@
     <title>Clément Demontigny — Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Fraunces:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -15,8 +15,8 @@
         <div class="header-inner">
           <div class="brand">Clément Demontigny</div>
           <nav class="nav">
-            <a href="#projets">Projets</a>
             <a href="#apropos">À propos</a>
+            <a href="#projets">Projets</a>
             <a href="#competences">Compétences</a>
             <a href="#parcours">Parcours</a>
             <a href="#contact">Contact</a>
@@ -29,13 +29,20 @@
     <main>
       <section id="hero" class="hero">
         <div class="container">
-          <h1 class="reveal">Graphiste & Communication</h1>
-          <p class="lead reveal">
-            Étudiant en première année de BUT MMI à l’IUT de Troyes, je développe des créations graphiques pour des projets variés, en veillant à proposer des visuels à la fois esthétiques, cohérents et adaptés aux objectifs de communication.
-          </p>
-          <div class="hero-actions reveal">
-            <a class="button primary" href="#projets">Voir mes projets</a>
-            <a class="button ghost" href="#contact">Me contacter</a>
+          <div class="hero-copy">
+            <span class="eyebrow reveal">Portfolio — 2026</span>
+            <h1 class="reveal">Graphiste & Communication</h1>
+            <p class="lead reveal">
+              Étudiant en première année de BUT MMI à l’IUT de Troyes, je développe des créations graphiques pour des projets variés, en veillant à proposer des visuels à la fois esthétiques, cohérents et adaptés aux objectifs de communication.
+            </p>
+            <div class="hero-actions reveal">
+              <a class="button primary" href="#projets">Voir mes projets</a>
+              <a class="button ghost" href="#contact">Me contacter</a>
+            </div>
+          </div>
+          <div class="hero-mark reveal">
+            <span class="big-num">01</span>
+            <span class="tag"><b>Disponible</b> — alternance Sept. 2026</span>
           </div>
         </div>
       </section>
@@ -44,23 +51,31 @@
         <div class="container">
           <div class="about-grid reveal">
             <div class="about-text">
+              <div class="folio"><span class="num">02</span><span class="line"></span><span class="label">À propos</span></div>
               <h2 class="section-title" style="text-align:left;">À propos de moi</h2>
               <p class="section-subtitle" style="text-align:left;margin-left:0;">
                Je crée des visuels pour donner vie à vos idées. Passionné par l'image et le design, j'aime transformer un concept en un projet concret, propre et efficace.
               </p>
               <p style="color: var(--muted);">Je suis actuellement en recherche d'alternance en graphisme ou en communication.</p>
             </div>
-            <img src="./images/8628.png" alt="Clément Demontigny" class="about-image">
+            <div class="frame">
+              <picture>
+                <source type="image/jpeg" srcset="./images/8628-400.jpg 400w, ./images/8628.jpg 2927w" sizes="(max-width: 600px) 90vw, 400px">
+                <img src="./images/8628-400.jpg" alt="Clément Demontigny" class="about-image" loading="lazy" width="400" height="400">
+              </picture>
+            </div>
           </div>
         </div>
       </section>
 
       <section id="projets" class="section">
         <div class="container">
+          <div class="folio reveal"><span class="num">03</span><span class="line"></span><span class="label">Projets</span></div>
           <h2 class="section-title reveal">Projets & Travaux</h2>
           <p class="section-subtitle reveal">Ces travaux reflètent mon univers créatif et ma façon de concevoir des visuels clairs, impactants et adaptés aux besoins de chaque projet de communication.</p>
           <div class="projects-grid">
             <a href="mojo-tunes.html" target="_blank" class="project-card reveal">
+              <div class="project-index">01</div>
               <div class="project-cover">
                 <embed src="./images/mojo_tunes.pdf#page=1&view=FitH&scrollbar=0&toolbar=0&navpanes=0" type="application/pdf">
               </div>
@@ -71,6 +86,7 @@
               </div>
             </a>
             <a href="ferme-esperance.html" target="_blank" class="project-card reveal">
+              <div class="project-index">02</div>
               <div class="project-cover">
                 <embed src="./images/ferme_esperance.pdf#page=1&view=FitH&scrollbar=0&toolbar=0&navpanes=0" type="application/pdf">
               </div>
@@ -81,6 +97,7 @@
               </div>
             </a>
             <a href="sae104.html" target="_blank" class="project-card reveal">
+              <div class="project-index">03</div>
               <div class="project-cover">
                 <video src="./images/SAE104_2025_Groupe H_Faivre_Demontigny_Iacopucci_Jamet_Tachenet_InterviewSAE104 (1) (1) (1) (1).mp4" muted playsinline preload="metadata"></video>
               </div>
@@ -91,6 +108,7 @@
               </div>
             </a>
             <a href="./images/SAE102_Noah-Jamet_Clement-Demontigny_Yann-Iacopucci_Yoanne-Tohibo_Evaelle-Faivre copie.pdf" target="_blank" class="project-card reveal">
+              <div class="project-index">04</div>
               <div class="project-cover">
                 <embed src="./images/SAE102_Noah-Jamet_Clement-Demontigny_Yann-Iacopucci_Yoanne-Tohibo_Evaelle-Faivre copie.pdf#page=1&view=FitH&scrollbar=0&toolbar=0&navpanes=0" type="application/pdf">
               </div>
@@ -100,7 +118,41 @@
                 <span class="project-link">Voir le PDF SAE102</span>
               </div>
             </a>
+            <a href="sae202-lockdown.html" target="_blank" class="project-card reveal">
+              <div class="project-index">05</div>
+              <div class="project-cover">
+                <embed src="./images/SAE202_lockdown_plan_marketing.pdf#page=1&view=FitH&scrollbar=0&toolbar=0&navpanes=0" type="application/pdf">
+              </div>
+              <div class="project-body">
+                <h3>SAE 202 : Lock Down</h3>
+                <p>Conception d'une expérience événementielle immersive (escape game nocturne, repas, nuitée) et de sa stratégie de communication complète, en agence fictive.</p>
+                <span class="project-link">Voir le dossier complet</span>
+              </div>
+            </a>
+            <a href="sae204-elvis.html" target="_blank" class="project-card reveal">
+              <div class="project-index">06</div>
+              <div class="project-cover">
+                <embed src="./images/SAE204_whos-elvis.pdf#page=1&view=FitH&scrollbar=0&toolbar=0&navpanes=0" type="application/pdf">
+              </div>
+              <div class="project-body">
+                <h3>SAE 204 : Who's Elvis ?</h3>
+                <p>Création de la présence en ligne d'une personnalité comme si nous étions son agence de communication aujourd'hui : repositionnement d'Elvis Presley en artiste émergent et stratégie digitale complète.</p>
+                <span class="project-link">Voir le dossier complet</span>
+              </div>
+            </a>
+            <a href="goodies-bde-mmi.html" target="_blank" class="project-card reveal">
+              <div class="project-index">07</div>
+              <div class="project-cover">
+                <embed src="./images/Goodies_BDE_MMI.pdf#page=1&view=FitH&scrollbar=0&toolbar=0&navpanes=0" type="application/pdf">
+              </div>
+              <div class="project-body">
+                <h3>Goodies BDE MMI</h3>
+                <p>Réponse à un appel d'offre du BDE MMI pour une ligne de goodies personnalisés (sweats, tote bags, gourdes), en agence web étudiante fictive : positionnement, budget et choix des prestataires.</p>
+                <span class="project-link">Voir le dossier complet</span>
+              </div>
+            </a>
             <a href="projet-podcast.html" target="_blank" class="project-card reveal">
+              <div class="project-index">08</div>
               <div class="project-cover" style="background:#111; display:flex; align-items:center; justify-content:center;">
                 <span style="font-size:3rem;">🔊</span>
               </div>
@@ -111,6 +163,7 @@
               </div>
             </a>
             <article class="project-card reveal">
+              <div class="project-index">09</div>
               <div class="project-cover">
                 <span style="font-size: 1.5rem; color: var(--muted);">En cours</span>
               </div>
@@ -125,6 +178,7 @@
 
       <section id="competences" class="section">
         <div class="container">
+          <div class="folio reveal"><span class="num">04</span><span class="line"></span><span class="label">Compétences</span></div>
           <h2 class="section-title reveal">Compétences</h2>
           <div class="skills-grid">
             <div class="skill-card reveal">
@@ -157,26 +211,27 @@
 
       <section id="parcours" class="section">
         <div class="container">
+          <div class="folio reveal"><span class="num">05</span><span class="line"></span><span class="label">Parcours</span></div>
           <h2 class="section-title reveal">Parcours</h2>
           <p class="section-subtitle reveal">BUT MMI Métier du Multimédia et de l'Internet.</p>
           <div class="timeline reveal">
             <div class="timeline-item">
+              <span class="timeline-year">2025—2028</span>
               <div class="timeline-content">
-                <span class="timeline-year">2025—2028</span>
                 <h3>IUT de Troyes</h3>
                 <p>MMI - Métier du Multimédia et de l'Internet</p>
               </div>
             </div>
             <div class="timeline-item">
+              <span class="timeline-year">2024—2025</span>
               <div class="timeline-content">
-                <span class="timeline-year">2024—2025</span>
                 <h3>Fac de Lettres de Nancy</h3>
                 <p>Licence Information et Communication</p>
               </div>
             </div>
             <div class="timeline-item">
+              <span class="timeline-year">2021—2024</span>
               <div class="timeline-content">
-                <span class="timeline-year">2021—2024</span>
                 <h3>Lycée général et technologique Catherine et Raymond Janot</h3>
                 <p>Baccalauréat général</p>
               </div>
@@ -187,11 +242,13 @@
 
       <section id="cv" class="section cv-section">
         <div class="container reveal">
+          <div class="folio"><span class="num">06</span><span class="line"></span><span class="label">CV</span></div>
           <h2 class="section-title">Mon CV</h2>
           <p class="section-subtitle">Vous pouvez consulter mon CV ci-dessous ou le télécharger.</p>
-          <embed src="./images/CV Demontigny Clément.pdf#view=FitH" type="application/pdf" />
-          <div style="text-align:center; margin-top: 2rem;">
-            <a class="button primary" href="./images/CV Demontigny Clément.pdf" download="CV_Clement_Demontigny.pdf" target="_blank" rel="noopener">Télécharger le CV</a>
+          <embed src="./images/CV-Clement-Demontigny.pdf#view=FitH" type="application/pdf" />
+          <div style="text-align:center; margin-top: 2rem; display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+            <a class="button ghost" href="./images/CV-Clement-Demontigny.pdf" target="_blank" rel="noopener">Voir le CV en plein écran</a>
+            <a class="button primary" href="./images/CV-Clement-Demontigny.pdf" download="CV_Clement_Demontigny.pdf" rel="noopener">Télécharger le CV</a>
           </div>
         </div>
       </section>
@@ -200,6 +257,7 @@
     <footer id="contact" class="site-footer">
       <div class="container">
         <div class="footer-content reveal">
+          <div class="folio"><span class="num">07</span><span class="line"></span><span class="label">Contact</span></div>
           <h2>Discutons d’un projet</h2>
           <p>Je suis disponible pour des collaborations digitales et de communication.</p>
           <div class="footer-actions">
